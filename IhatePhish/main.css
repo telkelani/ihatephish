@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.overlay{
+  width: 90%;
+  height: 100%;
+  position: absolute;
+
+  transform: translateX(-50%); /* Makes positioning in centre of box not top left corner */
+  animation-name: overlay-move;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+
+}
+
+.modal_box{
+  position: relative;
+  width: 90%;
+  height: 80%;
+  background: linear-gradient(45deg, tomato, #d47319);
+  border-radius: 23px 23px 23px 23px;
+  padding: 20px 50px;
+}
+
+#modal_text{
+  color: #3556cc;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+#url_img{
+  width: 80%;
+}
+
+#close_button{
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  width: 50px;
+  height: 50px;
+}
+
+#vid_container{
+
+}
+#video {
+  width: 25%;
+  height: 10%;
+  margin-left: 35%;
+  border-radius: 23px 23px 23px 23px;
+}
+
+
+
+@keyframes overlay-move{
+  from{top: 100%; left: 50%;}
+  to{ top: 10%; left: 50%;}
+}
+
+@keyframes close-modal{
+  to {opacity: 0%; }
+}
